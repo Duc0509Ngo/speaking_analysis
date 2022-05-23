@@ -62,7 +62,7 @@ class BarChartWidget extends StatelessWidget {
           x: 0,
           barRods: [
             BarChartRodData(
-              toY: (occurrenceTopic1.toDouble() / 35) * 100,
+              toY: (occurrenceTopic1.toDouble() / 39) * 100,
               color: Style.colors[0],
               width: 25.0,
             )
@@ -73,7 +73,7 @@ class BarChartWidget extends StatelessWidget {
           x: 1,
           barRods: [
             BarChartRodData(
-              toY: (occurrenceTopic2.toDouble() / 35) * 100,
+              toY: (occurrenceTopic2.toDouble() / 39) * 100,
               color: Style.colors[1],
               width: 25.0,
             )
@@ -84,7 +84,7 @@ class BarChartWidget extends StatelessWidget {
           x: 2,
           barRods: [
             BarChartRodData(
-              toY: (occurrenceTopic3.toDouble() / 35) * 100,
+              toY: (occurrenceTopic3.toDouble() / 39) * 100,
               color: Style.colors[2],
               width: 25.0,
             )
@@ -95,7 +95,7 @@ class BarChartWidget extends StatelessWidget {
           x: 3,
           barRods: [
             BarChartRodData(
-              toY: (occurrenceTopic4.toDouble() / 35) * 100,
+              toY: (occurrenceTopic4.toDouble() / 39) * 100,
               color: Style.colors[3],
               width: 25.0,
             )
@@ -106,7 +106,7 @@ class BarChartWidget extends StatelessWidget {
           x: 4,
           barRods: [
             BarChartRodData(
-              toY: (occurrenceTopic5.toDouble() / 35) * 100,
+              toY: (occurrenceTopic5.toDouble() / 39) * 100,
               color: Style.colors[4],
               width: 25.0,
             )

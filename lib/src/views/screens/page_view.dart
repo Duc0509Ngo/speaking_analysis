@@ -4,7 +4,7 @@ import 'package:speaking_analysis/src/business_logic/cubits/page_view_navigation
 import 'package:speaking_analysis/src/business_logic/cubits/speaking_topics_cubit.dart';
 import 'package:speaking_analysis/src/data/models/topic.dart';
 import 'package:speaking_analysis/src/views/screens/customized_bar_chart.dart';
-import 'package:speaking_analysis/src/views/screens/home_screen.dart';
+
 
 class PageViewWidget extends StatelessWidget {
   const PageViewWidget({Key? key}) : super(key: key);

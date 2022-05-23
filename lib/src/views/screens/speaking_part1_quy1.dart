@@ -4,15 +4,16 @@ import 'package:speaking_analysis/src/business_logic/cubits/page_view_navigation
 import 'package:speaking_analysis/src/views/screens/page_view.dart';
 import 'package:speaking_analysis/src/views/utils/circle_bar.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-  static const String homeScreenRoute = '/home_screen';
+class SpeakingPart1Quy1Screen extends StatefulWidget {
+  const SpeakingPart1Quy1Screen({Key? key}) : super(key: key);
+  static const String speakingPart1Quy1Route = '/speaking_part1_quy1';
   @override
   // ignore: library_private_types_in_public_api
-  _HomeScreenState createState() => _HomeScreenState();
+  _SpeakingPart1Quy1ScreenState createState() =>
+      _SpeakingPart1Quy1ScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _SpeakingPart1Quy1ScreenState extends State<SpeakingPart1Quy1Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

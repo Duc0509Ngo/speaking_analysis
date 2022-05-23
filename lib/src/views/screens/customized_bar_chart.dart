@@ -36,6 +36,9 @@ class CustomizedBarChart extends StatelessWidget {
             width: 401,
             height: 415,
             margin: const EdgeInsets.all(13),
+            constraints: const BoxConstraints(
+              maxHeight: 405
+            ),
             decoration: BoxDecoration(
               color: const Color(0xFF000000),
               border: Border.all(color: Colors.grey[200]!),

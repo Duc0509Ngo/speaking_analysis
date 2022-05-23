@@ -43,8 +43,8 @@ class SpeakingTopicsCubit extends Cubit<Topics> {
 
 
   SpeakingTopicsAPI api = SpeakingTopicsAPI();
-  void getTopics() async {
-    Topics topics = await api.fetchSpeakingTopics();
+  void getTopics(String speakingPart, String quy) async {
+    Topics topics = await api.fetchSpeakingTopics(speakingPart,quy);
     
     emit(topics);
   }
