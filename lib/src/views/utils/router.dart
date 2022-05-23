@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:speaking_analysis/src/views/screens/home_page.dart';
-import 'package:speaking_analysis/src/views/screens/speaking_part1_quy1.dart';
-
+import 'package:speaking_analysis/src/views/screens/home_screen.dart';
+import 'package:speaking_analysis/src/views/screens/speaking_part1_screen.dart';
 
 class RouterNavigation {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -10,12 +9,10 @@ class RouterNavigation {
         return MaterialPageRoute(
           builder: (_) => const HomeScreen(),
         );
-      case SpeakingPart1Quy1Screen.speakingPart1Quy1Route:
+      case SpeakingPart1Screen.speakingPart1Screen:
         return MaterialPageRoute(
-          builder: (_) => const SpeakingPart1Quy1Screen(),
+          builder: (_) => const SpeakingPart1Screen(),
         );
-
-      
 
       default:
         return MaterialPageRoute(

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:speaking_analysis/src/views/utils/bar_chart.dart';
 import 'package:speaking_analysis/src/views/utils/style.dart';
@@ -7,7 +6,6 @@ import 'package:speaking_analysis/src/views/utils/title_row.dart';
 
 class CustomizedBarChart extends StatelessWidget {
   
- 
   const CustomizedBarChart(
       {Key? key,
       required this.tileAxis1,

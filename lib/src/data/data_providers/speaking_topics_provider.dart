@@ -1,17 +1,29 @@
-
-
 import 'dart:convert';
-import 'package:speaking_analysis/src/data/models/topic.dart';
+import 'package:speaking_analysis/src/data/models/topic_quy1.dart';
 import 'package:http/http.dart' as http;
+import 'package:speaking_analysis/src/data/models/topic_quy2.dart';
 
 class SpeakingTopicsAPI {
-  Future<Topics> fetchSpeakingTopics(String speakingPart, String quy) async {
+  Future<dynamic> fetchSpeakingPart1Quy1Topics() async {
     final response =
-        await http.get(Uri.parse('http://127.0.0.1:8000/speaking/${speakingPart}/${quy}'));
+        await http.get(Uri.parse('http://127.0.0.1:8000/speaking/part1/quy1'));
 
     if (response.statusCode == 200) {
-    
-      return Topics.fromJson(jsonDecode(response.body)[0]);
+      
+        return TopicsQuy1.fromJson(jsonDecode(response.body)[0]);
+      
+    } else {
+      throw Exception('Failed to load Speaking Topics');
+    }
+  }
+   Future<dynamic> fetchSpeakingPart1Quy2Topics() async {
+    final response =
+        await http.get(Uri.parse('http://127.0.0.1:8000/speaking/part1/quy2'));
+
+    if (response.statusCode == 200) {
+      
+        return TopicsQuy2.fromJson(jsonDecode(response.body)[0]);
+      
     } else {
       throw Exception('Failed to load Speaking Topics');
     }

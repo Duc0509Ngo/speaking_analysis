@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:speaking_analysis/src/business_logic/cubits/page_view_navigation_cubit.dart';
-import 'package:speaking_analysis/src/business_logic/cubits/speaking_topics_cubit.dart';
-import 'package:speaking_analysis/src/data/models/topic.dart';
+import 'package:speaking_analysis/src/business_logic/cubits/speaking_topics_quy1_cubit.dart';
 import 'package:speaking_analysis/src/views/screens/customized_bar_chart.dart';
 
-
-class PageViewWidget extends StatelessWidget {
-  const PageViewWidget({Key? key}) : super(key: key);
+class PageViewSpeakingPart1Quy1 extends StatelessWidget {
+  const PageViewSpeakingPart1Quy1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<SpeakingTopicsCubit, Topics>(
+    return BlocBuilder<SpeakingPart1Quy1TopicsCubit, dynamic>(
       builder: (context, topics) {
         return PageView(
           onPageChanged: (int currentPageIndex) {

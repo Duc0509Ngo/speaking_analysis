@@ -1,5 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first, non_constant_identifier_names, prefer_const_constructors
-class Topics{
+class TopicsQuy1{
   final int occurrence_study_work;
 
   final int occurrence_sports;
@@ -70,7 +70,7 @@ class Topics{
 
   final int occurrence_leisure_activities;
 
-  const Topics({
+  const TopicsQuy1({
     required this.occurrence_study_work,
     required this.occurrence_sports,
     required this.occurrence_arts,
@@ -108,8 +108,8 @@ class Topics{
     required this.occurrence_leisure_activities,
   });
 
-  factory Topics.fromJson(Map<String, dynamic> json) {
-    return Topics(
+  factory TopicsQuy1.fromJson(Map<String, dynamic> json) {
+    return TopicsQuy1(
         occurrence_Advertisement: json['Advertisement'],
         occurrence_animal_pets: json['Animal_Pets'],
         occurrence_apps: json['Apps'],
