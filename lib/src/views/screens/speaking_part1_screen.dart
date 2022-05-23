@@ -19,6 +19,21 @@ class SpeakingPart1Screen extends StatelessWidget {
             style: TextStyle(color: Colors.black, fontSize: 21.0)),
         centerTitle: true,
         elevation: 0,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 35.0),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const CircleAvatar(
+              backgroundColor: Colors.white,
+              child: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ),
       ),
       body: SizedBox(
         child: BlocBuilder<QuyCubit, String>(
