@@ -4,7 +4,7 @@
 lib                                      
 ├─ src                                   
 │  ├─ business_logic                    
-│  │     cubits (Lấy dữ liệu từ API)                          
+│  │  └─ cubits (Lấy dữ liệu từ API)                          
 │  │     ├─ `page_view_navigation_cubit.dart` (Di chuyển qua lại giữa các page views trong Speaking Part 1 Screen)                    
 │  │     ├─ `quy_cubit.dart` (Xác định quý nào trong năm để hiện trong Speaking Part 1)                 
 │  │     ├─ `speaking_part2_cubit.dart` (Lấy dữ liệu Speaking Part 2)      
