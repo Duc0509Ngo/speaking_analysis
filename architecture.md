@@ -11,11 +11,11 @@ lib
 │  │     ├─ `speaking_topics_quy1_cubit.dart` (Lấy dữ liệu Speaking Part 1 Quý 1)
 │  │     └─ `speaking_topics_quy2_cubit.dart` (Lấy dữ liệu Speaking Part 1 Quý 2) 
 │  ├─ data                           
-│  │  ├─ data_providers (Nguồn cung cấp dữ liệu Speaking)                          
-│  │  │  ├─ `speaking_topics_provider.dart`                
-│  │  │  models                     
-│  │  │  ├─`topic_quy1.dart` 
-│  │  │  └─`topic_quy2.dart`  
+│  │  └─ data_providers (Nguồn cung cấp dữ liệu Speaking)                          
+│  │     ├─ `speaking_topics_provider.dart`                
+│  │     models                     
+│  │     ├─`topic_quy1.dart` 
+│  │     └─`topic_quy2.dart`  
 │  └─ views                           
 │     ├─ screens                          
 │     │   ├─ page_view (Những Page views của Speaking Part 1 Screen) 
