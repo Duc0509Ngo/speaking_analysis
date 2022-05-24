@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:speaking_analysis/src/data/data_providers/speaking_topics_provider.dart';
 import 'package:speaking_analysis/src/data/models/topic_quy1.dart';
-
+import 'package:http/http.dart' as http;
 class SpeakingPart1Quy1TopicsCubit extends Cubit<TopicsQuy1> {
   SpeakingPart1Quy1TopicsCubit()
       : super(const TopicsQuy1(
@@ -44,6 +44,7 @@ class SpeakingPart1Quy1TopicsCubit extends Cubit<TopicsQuy1> {
 
   SpeakingTopicsAPI api = SpeakingTopicsAPI();
   void getTopicsPart1() async {
+    
     TopicsQuy1 topics = await api.fetchSpeakingPart1Quy1Topics();
     emit(topics);
   }
