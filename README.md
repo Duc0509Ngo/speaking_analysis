@@ -34,7 +34,8 @@ Phần mềm Speaka chủ yêu dùng để thu thập và trực quang hoá tầ
 ### Testing
 - Mockito
 
-
+## Cấu trúc dự án
+Xem tại file [cấu trúc dự án](./architecture.md)
 
 
  
