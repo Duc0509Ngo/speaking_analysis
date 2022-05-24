@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:speaking_analysis/src/business_logic/cubits/page_view_navigation_cubit.dart';
 import 'package:speaking_analysis/src/business_logic/cubits/speaking_topics_quy1_cubit.dart';
+import 'package:speaking_analysis/src/data/models/topic_quy1.dart';
 import 'package:speaking_analysis/src/views/screens/customized_bar_chart.dart';
 
 class PageViewSpeakingPart1Quy1 extends StatelessWidget {
@@ -9,7 +10,7 @@ class PageViewSpeakingPart1Quy1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<SpeakingPart1Quy1TopicsCubit, dynamic>(
+    return BlocBuilder<SpeakingPart1Quy1TopicsCubit, TopicsQuy1>(
       builder: (context, topics) {
         return PageView(
           onPageChanged: (int currentPageIndex) {

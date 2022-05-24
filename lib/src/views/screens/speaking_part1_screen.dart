@@ -8,7 +8,7 @@ import 'package:speaking_analysis/src/views/utils/circle_bar.dart';
 
 class SpeakingPart1Screen extends StatelessWidget {
   const SpeakingPart1Screen({Key? key}) : super(key: key);
-  static const speakingPart1Screen = '/speaking_part1_screen';
+  static const speakingPart1ScreenRoute = '/speaking_part1_screen';
 
   @override
   Widget build(BuildContext context) {
@@ -19,19 +19,16 @@ class SpeakingPart1Screen extends StatelessWidget {
             style: TextStyle(color: Colors.black, fontSize: 21.0)),
         centerTitle: true,
         elevation: 0,
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 35.0),
-          child: GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: const CircleAvatar(
-              backgroundColor: Colors.white,
-              child: Icon(
-                Icons.arrow_back_ios,
-                color: Colors.black,
-              ),
-            ),
+        leading: MaterialButton(
+          color: Colors.white,
+          shape: const CircleBorder(),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.arrow_back_ios,
+            size: 25,
+            color: Colors.black,
           ),
         ),
       ),

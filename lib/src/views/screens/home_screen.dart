@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:speaking_analysis/src/business_logic/cubits/quy_cubit.dart';
+import 'package:speaking_analysis/src/business_logic/cubits/speaking_part2_cubit.dart';
 import 'package:speaking_analysis/src/business_logic/cubits/speaking_topics_quy1_cubit.dart';
 import 'package:speaking_analysis/src/business_logic/cubits/speaking_topics_quy2_cubit.dart';
 import 'package:speaking_analysis/src/views/screens/speaking_part1_screen.dart';
+import 'package:speaking_analysis/src/views/screens/speaking_part2_screen.dart';
 import 'package:speaking_analysis/src/views/utils/style.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -26,7 +28,7 @@ class HomeScreen extends StatelessWidget {
                         .getTopicsPart1();
                     BlocProvider.of<QuyCubit>(context).chooseQuy('quy1');
                     Navigator.pushNamed(
-                        context, SpeakingPart1Screen.speakingPart1Screen);
+                        context, SpeakingPart1Screen.speakingPart1ScreenRoute);
                   },
                 ),
                 const SizedBox(
@@ -40,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                         .getTopicsPart1();
                     BlocProvider.of<QuyCubit>(context).chooseQuy('quy2');
                     Navigator.pushNamed(
-                        context, SpeakingPart1Screen.speakingPart1Screen);
+                        context, SpeakingPart1Screen.speakingPart1ScreenRoute);
                   },
                 ),
                 const SizedBox(
@@ -50,8 +52,10 @@ class HomeScreen extends StatelessWidget {
                   title: 'Speaking Part 2 Quy 1',
                   colorTitle: Style.colors[2],
                   onTap: () {
-                    BlocProvider.of<SpeakingPart1Quy1TopicsCubit>(context)
-                        .getTopicsPart1();
+                    BlocProvider.of<SpeakingPart2Cubit>(context)
+                        .getSpeakingPart2Topics('quy1');
+                    Navigator.pushNamed(
+                        context, SpeakingPart2Screen.speakingPart2ScreenRoute);
                   },
                 ),
                 const SizedBox(
@@ -61,8 +65,10 @@ class HomeScreen extends StatelessWidget {
                   title: 'Speaking Part 2 Quy 2',
                   colorTitle: Style.colors[4],
                   onTap: () {
-                    BlocProvider.of<SpeakingPart1Quy1TopicsCubit>(context)
-                        .getTopicsPart1();
+                     BlocProvider.of<SpeakingPart2Cubit>(context)
+                        .getSpeakingPart2Topics('quy2');
+                    Navigator.pushNamed(
+                        context, SpeakingPart2Screen.speakingPart2ScreenRoute);
                   },
                 ),
               ],

@@ -41,6 +41,7 @@ class SpeakingPart1Quy1TopicsCubit extends Cubit<TopicsQuy1> {
             occurrence_websites: 0,
             occurrence_weekend: 0));
 
+
   SpeakingTopicsAPI api = SpeakingTopicsAPI();
   void getTopicsPart1() async {
     TopicsQuy1 topics = await api.fetchSpeakingPart1Quy1Topics();
